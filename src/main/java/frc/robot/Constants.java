@@ -52,4 +52,8 @@ public final class Constants {
 	public static final int MotorRight1 = 2;
 	public static final int MotorRight2 = 3;
 	
+	public static final in DriverController = 0;
+	public static final int LeftStickY = 1;
+	public static final int RightStickY = 5;
+	
     }
