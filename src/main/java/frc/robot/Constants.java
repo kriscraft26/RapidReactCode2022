@@ -45,4 +45,11 @@ public final class Constants {
 
     // Speed Conversion Constant 
     public static final double speedConvConst = 6.23;
+	
+	
+	public static final int MotorLeft1 = 0;
+	public static final int MotorLeft2 = 1;
+	public static final int MotorRight1 = 2;
+	public static final int MotorRight2 = 3;
+	
     }
