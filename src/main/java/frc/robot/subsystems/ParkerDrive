@@ -1,15 +1,15 @@
 package frc.robot.subsystems;
 
 import edu.wpi.first.wpilibj.command.subsystem;
-import frc.robot.RobotMap
+import frc.robot.Constants
 
 
 
 public class ParkerDrive extends subsystem {
-private TalonSRX motorLeft1 = new TalonSRX(RobotMap.MotorLeft1);
-private TalonSRX motorLeft2 = new TalonSRX(RobotMap.MotorLeft2);
-private TalonSRX motorRight1 = new TalonSRX(RobotMap.MotorRight1);
-private TalonSRX motorRight2 = new TalonSRX(RobotMap.MotorRight2);
+private TalonSRX motorLeft1 = new TalonSRX(Constants.MotorLeft1);
+private TalonSRX motorLeft2 = new TalonSRX(Constants.MotorLeft2);
+private TalonSRX motorRight1 = new TalonSRX(Constants.MotorRight1);
+private TalonSRX motorRight2 = new TalonSRX(Constants.MotorRight2);
 
 
 @Override
