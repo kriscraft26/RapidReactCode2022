@@ -1,8 +1,12 @@
 package frc.robot.subsystems;
 
 import edu.wpi.first.wpilibj.command.subsystem;
+import frc.robot.RobotMap
+
+
 
 public class ParkerDrive extends subsystem {
+TalonSRX motorLeft1 = new TalonSRX(RobotMap.motorleft1);
 
 
 @Override
