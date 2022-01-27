@@ -48,6 +48,10 @@ public class RobotContainer {
   //Controllers
   public Joystick Logitech = new Joystick(Constants.JOYSTICK); // Port is 0
   public XboxController Xbox360 = new XboxController(Constants.XBOX); // Port is 1
+  
+  public double GetDriverRawAxis(int axis){
+  return driverController.getRawAxis(axis);  
+  }
 
   //Buttons
   public JoystickButton Run_Launcher = new JoystickButton(Xbox360, Constants.RUN_LAUNCHER);
