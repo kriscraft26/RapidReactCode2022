@@ -5,7 +5,7 @@ import edu.wpi.first.wpilibj.command.command;
 
 public class ParkerDrive extends command {
 public ParkerDrive() {
-requires(chassis);
+requires(Robot.parkerDrive);
 }
 
 @Override
@@ -15,16 +15,25 @@ protected void initialize() {
 
 @Override
 protected void execute() {
+double leftStickY = Robot.m_oi.GetDriverRawAxis(Constants.LeftStickY )
+double rightStickY = Robot.m_oi.GetDriverRawAxis(Constants.RightStickY )
+
+Robot.parkerDrive.setLeftMotors(leftStickY*leftStickY);
+Robot.parkerDrive.setRightMotors(rightStickY*rightStickY);
 }
 
 @Override
 protected void isFinished() {
+return false;
 }
 
 @Override
 protected void end() {
+Robot.parkerDrive.setLeftMotors(0);
+Robot.parkerDrive.setRightMotors(0);
 }
 
 @Override
 protected void interrupted() {
+this.end();
 }
